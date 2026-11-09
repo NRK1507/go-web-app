@@ -34,6 +34,7 @@ Developer push to GitHub (main)
 Browser --> Azure NSG --> NGINX NodePort --> Ingress
                                            |
                                       Service --> Pod
+```
 
 ## Running the server
 
