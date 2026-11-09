@@ -58,7 +58,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-        file: ./Dockerfile
+        file: ./dockerfile
         push: true
         tags: {{ secrets.DOCKERHUB_USERNAME }}/go-web-app:{{github.run_id}}
         
@@ -78,8 +78,8 @@ jobs:
         
       - name: commit and push changes
         run: |
-          git config --global user.email "abc@gmail.com"
-          git config --global user.name "abc"
+          git config --global user.email "rajeshkawadi181@gmail.com"
+          git config --global user.name "NRK1507"
           git add helm/go-web-app-chart/values.yml
           git commit -m "update tag in Helm Chart"
           git push
